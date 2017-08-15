@@ -1,0 +1,75 @@
+﻿@model blogs.Areas.Admin.Models.topics
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>topics</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.subject_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subject_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.topic_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.topic_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.topic_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.topic_description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.topic_example)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.topic_example)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modified_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modified_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

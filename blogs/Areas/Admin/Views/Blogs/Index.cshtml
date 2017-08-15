@@ -1,0 +1,51 @@
+﻿@model IEnumerable<blogs.Areas.Admin.Models.Blog>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container">
+@foreach (var item in Model)
+{ 
+    <div class="col-md-6" style="border:2px solid black; height:350px; margin-top:10px;">
+        <table class="table table-responsive">
+            <tr>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.BlogTitle)
+                </td>
+            </tr>
+            <tr>
+               
+                <td>
+                    <div style="max-height:200px; overflow-y:scroll;">
+                        @Html.Raw(item.BlogDescription)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+               
+                <td>
+                   Enabled <input type="checkbox" checked="@item.Status" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BlogId }) |                  
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BlogId })
+                </td>
+            </tr>
+
+
+        </table>
+</div>
+}
+    
+</div>
+

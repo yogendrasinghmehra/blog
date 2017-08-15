@@ -1,0 +1,30 @@
+﻿@model blogs.Areas.Admin.Models.Blog
+@{
+    ViewBag.Title = "Topic";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/page_styles/topic.css" rel="stylesheet" />
+
+
+       
+            <div class="dv_blog">
+                <div class="dv_head">
+                    <h2>@Model.BlogTitle</h2>
+                </div>
+                <div class="dv_desc">
+                  <p>
+                      @Html.Raw(Model.BlogDescription)     
+                    </p>
+
+                   
+
+                </div>
+
+             
+                <hr />
+            </div>
+       
+
+
+   

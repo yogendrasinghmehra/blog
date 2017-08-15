@@ -1,0 +1,10 @@
+﻿@model IEnumerable<blogs.Areas.Admin.Models.Tag>
+
+<ul class="list-group">
+    @foreach(var data in Model)
+    {
+       
+        <li  class="list-group-item">@Html.ActionLink(data.TagName,"Tag", "Home",new {id=data.TagId},null)</li>
+    }
+    
+</ul>

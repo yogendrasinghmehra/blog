@@ -1,0 +1,43 @@
+﻿        html,body{
+            height:100%;
+            padding:0px;
+            margin:0px;
+            font-size:20px;
+            
+        }
+        .main-row
+        {
+            height:100%;
+        }
+        .mylist
+        {
+            list-style:none;
+            margin-top:30px;
+            text-align:right;
+        }
+        .mylist li{
+            min-height:30px;
+            border-bottom:1px solid white;
+            padding:5px;
+           
+        }
+
+        #dv_menu
+        {
+            height:100%;
+            background-color:black; 
+            text-align:center;
+            color:white;
+            position:fixed;
+        }
+        #dv_menu .dv_img
+        {
+            margin-top:50px;
+             margin-bottom:20px;
+        }
+        .dv_img img
+        {
+            height:150px;
+            width:150px;
+        }
+    

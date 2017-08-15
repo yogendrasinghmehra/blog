@@ -1,0 +1,25 @@
+﻿
+    .dv_head
+    {
+        padding:20px;
+     
+    }
+    .dv_head h2{
+        color:navy;
+    }
+    .dv_desc
+    {
+       padding:10px;
+
+    }
+    
+    .rd_more
+    {
+        float:right;
+
+    }
+    .date_publish
+    {
+        vertical-align:bottom;
+        padding:20px;
+    }
