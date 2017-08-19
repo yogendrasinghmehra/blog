@@ -1,4 +1,4 @@
-﻿@model List<blogs.Areas.Admin.Models.topics>
+﻿@model List<blogs.Areas.Admin.Models.Tag>
 @{
     ViewBag.Title = "Subject";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -15,11 +15,11 @@
            
             <div class="dv_blog">
                 <div class="dv_head">
-                    <h2>@subject.topic_title </h2>
+                    <h2>@subject.TagName </h2>
                   
                     @Html.ActionLink("View Blog...", "Topic", "Home", new { id = subject.id }, new { @class = "rd_more" })
                 </div>
-                <small class="date_publish">@subject.created_date</small>
+                <small class="date_publish"></small>
                <hr />
             </div>
         }
