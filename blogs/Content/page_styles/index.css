@@ -1,8 +1,1 @@
-﻿.dv_main
-{
-   
-}
-.dv_main h3{
-    color:navy;
-}
-.col-md-3 { padding-top:100px;}
+﻿.blog_content{max-height:100px;overflow:hidden;}

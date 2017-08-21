@@ -5,7 +5,61 @@
 
 <link href="~/Content/page_styles/index.css" rel="stylesheet" />
 
-<div class="dv_main">
+
+
+    <div class="row">
+
+
+        <div class="sub-title">
+            <h2>My Blogs</h2>
+            <a href="contact.html"><i class="icon-envelope"></i></a>
+        </div>
+
+
+        <div class="col-md-12 content-page">
+
+@{
+    if (Model.Count > 0)
+    {
+        foreach (var blog in Model)
+        {
+             <!-- Blog Post Start -->
+            <div class="col-md-12 blog-post">
+                <div class="post-title">
+                    <a href="single.html"><h1>@blog.BlogTitle</h1></a>
+                </div>
+                <div class="post-info">
+                    <span>@blog.CreatedDate</span>
+                </div>
+                <div class="blog_content">
+                    @Html.Raw(blog.BlogDescription)
+                </div>
+                
+                @Html.ActionLink("View Full Blog", "Blog", "Home", new { id = blog.BlogId }, new { @class = "button button-style button-anim fa fa-long-arrow-right" })
+            </div>
+            <!-- Blog Post End -->
+        }
+    }
+}
+
+
+           
+          
+
+
+            
+
+        </div>
+
+    </div>
+
+
+
+  
+
+
+
+@*<div class="dv_main">
    
         @{
             if (Model.Count > 0)
@@ -35,4 +89,4 @@
 
    
     
-</div>
+</div>*@

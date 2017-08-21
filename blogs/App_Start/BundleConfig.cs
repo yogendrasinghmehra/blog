@@ -26,6 +26,16 @@ namespace blogs
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            //new theme css bundle
+            bundles.Add(new StyleBundle("~/Content/theme/css").Include(
+                     "~/Content/theme/css/plugin.css",
+                     "~/Content/theme/css/style.css"));
+
+            //new theme script bundle
+            bundles.Add(new ScriptBundle("~/bundles/theme").Include(
+                     "~/Content/theme/js/jquery.min.js",
+                     "~/Content/theme/js/plugin.js",
+                     "~/Content/theme/js/scripts.js"));
         }
     }
 }

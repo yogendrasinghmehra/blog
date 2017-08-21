@@ -1,22 +1,2 @@
-﻿    .dv_head {
-        padding: 20px;
-       
-    }
-
-        .dv_head h2 {
-            color: navy;
-        }
-
-    .dv_desc {
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-        .dv_desc p {
-            text-align: justify;
-            
-        }
-
-    .rd_more {
-        float: right;
-    }
+﻿.social-icon { text-align:right;}
+.link_like{cursor:pointer;}

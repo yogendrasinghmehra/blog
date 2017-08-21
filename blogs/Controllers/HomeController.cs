@@ -37,7 +37,10 @@ namespace blogs.Controllers
       
         public ActionResult Tag(int id)
         {
-            var subjects = db.Tags.Where(i=>i.TagId==id).ToList();
+            var subjects = db.Blogs.Where(i => i.TagId == id).ToList();
+            
+          var tagName=db.Tags.Where(i => i.TagId == id).SingleOrDefault();
+          ViewBag.TagName = tagName.TagName;
             return View(subjects);
         }
        
