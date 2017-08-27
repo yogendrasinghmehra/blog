@@ -16,6 +16,7 @@ namespace blogs.Models
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<user> users { get; set; }
+        public DbSet<likes_detail> like_details { get; set; }
 
     }
 }

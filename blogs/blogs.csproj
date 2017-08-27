@@ -185,8 +185,17 @@
     <Compile Include="Migrations\201708071334509_removed blog url column.Designer.cs">
       <DependentUpon>201708071334509_removed blog url column.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708270313098_added like model.cs" />
+    <Compile Include="Migrations\201708270313098_added like model.Designer.cs">
+      <DependentUpon>201708270313098_added like model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708270315597_added like model new.cs" />
+    <Compile Include="Migrations\201708270315597_added like model new.Designer.cs">
+      <DependentUpon>201708270315597_added like model new.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\dbContext.cs" />
+    <Compile Include="Models\likes_detail.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -490,6 +499,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708071334509_removed blog url column.resx">
       <DependentUpon>201708071334509_removed blog url column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708270313098_added like model.resx">
+      <DependentUpon>201708270313098_added like model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708270315597_added like model new.resx">
+      <DependentUpon>201708270315597_added like model new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,4 +13,12 @@ namespace blogs.Areas.Admin.Models
         [Required]
         public string TagName { get; set; }
     }
+
+    public class TagResult
+    {
+        public int  TagId { get; set; }
+        public string TagName { get; set; }
+        public int TotalCount { get; set; }
+
+    }
 }

@@ -1,11 +1,11 @@
-﻿@model IEnumerable<blogs.Areas.Admin.Models.Tag>
+﻿@model IEnumerable<blogs.Areas.Admin.Models.TagResult>
 
 <div class="list list-style-2 margin-top-30">
     <ul>
         @foreach (var data in Model)
         {
 
-            <li>@Html.ActionLink(data.TagName, "Tag", "Home", new { id = data.TagId }, null)</li>
+            <li>@Html.ActionLink(data.TagName, "Tag", "Home", new { id = data.TagId }, null) (@data.TotalCount) </li>
         }
       
     </ul>
